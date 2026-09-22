@@ -1,0 +1,48 @@
+{
+  "model_type": "RandomForestClassifier (Pipeline con preprocesamiento)",
+  "sklearn": "1.5.2",
+  "python": "3.12.10",
+  "target": "class",
+  "classes": {
+    "0": "<=50K",
+    "1": ">50K"
+  },
+  "features": [
+    "age",
+    "hours_per_week",
+    "capital_gain",
+    "capital_loss",
+    "workclass",
+    "education",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "num_cols": [
+    "age",
+    "hours_per_week",
+    "capital_gain",
+    "capital_loss"
+  ],
+  "cat_cols": [
+    "workclass",
+    "education",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "metrics": {
+    "accuracy": 0.8665,
+    "f1_macro": 0.7968,
+    "roc_auc": 0.9165
+  },
+  "primary_metric": "f1_macro",
+  "trained_at": "2026-09-22T00:21:36+00:00",
+  "version": "1.0.0"
+}
