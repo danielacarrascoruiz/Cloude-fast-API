@@ -23,7 +23,8 @@ Tarea de Cloud Computing — Diploma en Data Science, UAI.
 
 ```bash
 # 1) Clonar y entrar a la carpeta
-git clone <URL-DEL-REPO> && cd <carpeta>
+git clone https://github.com/danielacarrascoruiz/Cloude-fast-A.git
+cd Cloude-fast-A
 
 # 2) Entorno virtual
 python -m venv .venv
@@ -91,15 +92,18 @@ curl -X POST http://localhost:8000/predict \
 
 ## Pruebas
 
+Las pruebas automatizadas de la API se ejecutaron con el siguiente comando:
+
 ```bash
-pytest
+python -m pytest
 ```
 
-Pega aquí la salida de `pytest` como evidencia. Ejemplo esperado:
+Resultado obtenido:
 
-```
+```text
 tests/test_api.py .....                                              [100%]
-5 passed in 1.7s
+
+5 passed, 1 warning in 11.35s
 ```
 
 ## Estructura del repositorio
