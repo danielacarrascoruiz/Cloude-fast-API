@@ -45,6 +45,13 @@ uvicorn app.main:app --reload --port 8000
 
 Abrir en el navegador: **http://localhost:8000/docs**
 
+### Prueba interactiva con Swagger
+
+Con la API en ejecución, ingresar a **http://localhost:8000/docs** para acceder
+a Swagger UI. Desde esta interfaz se pueden probar directamente los endpoints
+`/health`, `/model-info`, `/predict` y `/predict-batch`, además de verificar
+la validación de las entradas de la API.
+
 > El modelo se carga una sola vez al iniciar la app (evento `lifespan`).
 > Las rutas al `.pkl` son relativas al proyecto (no hay rutas absolutas).
 
