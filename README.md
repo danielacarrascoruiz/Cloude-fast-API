@@ -104,7 +104,16 @@ curl -X POST http://localhost:8000/predict \
   -H "Content-Type: application/json" \
   -d '{"age":"cuarenta"}'
 ```
+### Manejo de errores
 
+La API contempla respuestas controladas ante entradas inválidas o errores
+durante la inferencia:
+
+- `422 Unprocessable Entity`: se devuelve cuando faltan campos obligatorios
+  o los datos enviados no cumplen con el esquema esperado.
+- `500 Internal Server Error`: se utiliza ante errores internos durante la
+  inferencia, entregando un mensaje controlado sin exponer trazas del sistema.
+  
 ## Pruebas
 
 Las pruebas automatizadas de la API se ejecutaron con el siguiente comando:
