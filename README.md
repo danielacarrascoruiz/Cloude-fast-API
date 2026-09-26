@@ -123,8 +123,8 @@ tests/test_api.py .....                                              [100%]
 
 ## Estructura del repositorio
 
-```
-.
+```text
+Cloude-fast-A/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py
