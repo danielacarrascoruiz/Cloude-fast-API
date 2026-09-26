@@ -112,18 +112,15 @@ tests/test_api.py .....                                              [100%]
 .
 ├── app/
 │   ├── __init__.py
-│   ├── main.py        # aplicación FastAPI (5 endpoints, carga única del modelo)
-│   └── schemas.py     # modelos Pydantic (entrada/salida)
+│   ├── main.py
+│   └── schemas.py
+├── Docs/
 ├── model/
-│   ├── model.pkl      # pipeline serializado (lo genera train.py)
-│   └── metadata.json  # versiones, features y métricas (lo genera train.py)
-├── notebooks/
-│   └── exploracion.ipynb
+│   ├── model.pkl
+│   └── metadata.json
 ├── tests/
 │   └── test_api.py
-├── docs/              # capturas de evidencia local
-├── data/
-│   └── README.md      # origen del dataset
+├── exploracion.ipynb
 ├── train.py
 ├── requirements.txt
 ├── runtime.txt
