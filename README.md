@@ -52,6 +52,14 @@ a Swagger UI. Desde esta interfaz se pueden probar directamente los endpoints
 `/health`, `/model-info`, `/predict` y `/predict-batch`, además de verificar
 la validación de las entradas de la API.
 
+### Reproducibilidad del modelo
+
+El modelo puede regenerarse completamente desde el repositorio. Después de
+instalar las dependencias, ejecutar:
+
+```bash
+python train.py
+
 > El modelo se carga una sola vez al iniciar la app (evento `lifespan`).
 > Las rutas al `.pkl` son relativas al proyecto (no hay rutas absolutas).
 
